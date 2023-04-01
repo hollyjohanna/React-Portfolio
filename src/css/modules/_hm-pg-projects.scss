@@ -1,0 +1,158 @@
+#hm-pg-projects-container {
+    width: 100%;
+    padding: 40px 60px;
+    h2 {
+        font-size: 20px;
+        font-family: $headingfont;
+        margin-bottom: 40px;
+    }
+    #projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        row-gap: 30px;
+        max-width: 305px;
+        .projects-slider {
+            width: 100%;
+            height: auto;
+            .project-card {
+                text-align: center;
+                width: 100%;
+                height: 100%;
+                background-color: $backgroundblue;
+                padding: 40px 25px;
+                border-radius: 30px;
+                transition: all .3s ease-in-out;
+                h2 {
+                    font-family: $headingfont;
+                    font-size: 20px;
+                    margin-bottom: 30px;
+                    pointer-events: none;
+                }
+                h3 {
+                    font-family: $mainfont;
+                    font-size: 14px;
+                    margin-bottom: 20px;
+                    pointer-events: none;
+                }
+                img {
+                    width: 100%;
+                    height: 178px;
+                    object-fit: cover;
+                    margin-bottom: 20px;
+                    transition: all .4s ease-in-out;
+                }
+                a {
+                    text-decoration: none;
+                }
+                button {
+                    @include button;
+                    margin: auto;
+                    background-color: $blue;
+                    cursor: pointer;
+                }
+                button:hover {
+                    background-color: $darkpink;
+                }
+            }
+            .project-card:hover {
+                background-color: $backgroundblueintense;
+                img {
+                    scale: 1.1;
+                }
+            }
+        }
+    }
+}
+
+//======================================================================================
+//                                      MEDIA QUERIES
+//======================================================================================
+
+@media screen and (min-width: 600px) {
+    #hm-pg-projects-container {
+        #projects-container {
+            max-width: 568px;
+            .projects-slider {
+                .carousel-item-padding {
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #hm-pg-projects-container {
+        padding: 40px 100px;
+        h2 {
+            font-size: 25px;
+        }
+        #projects-container {
+            max-width: 568px;
+            .projects-slider {
+                .project-card {
+                    h2 {
+                        font-family: $headingfont;
+                        font-size: 20px;
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #hm-pg-projects-container {
+        padding: 100px 70px;
+        h2 {
+            font-size: 35px;
+        }
+        #projects-container {
+            max-width: 926px;
+            .projects-slider {
+                .project-card {
+                    padding: 50px 30px;
+                    h3 {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }   
+}
+
+@media screen and (min-width: 1440px) {
+    #hm-pg-projects-container {
+        padding: 100px 70px;
+        margin: 0;
+        width: 100%;
+        h2 {
+            font-size: 40px;
+            max-width: 1100px;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+        #projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            column-gap: 22px;
+            max-width: 1100px;
+            margin: auto;
+            .projects-slider {
+                .project-card {
+                    padding: 50px 27px;
+                    h2 {
+                        font-size: 25px;
+                    }
+                    img {
+                        width: 90%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }   
+}

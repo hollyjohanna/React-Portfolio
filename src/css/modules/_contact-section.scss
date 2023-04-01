@@ -1,0 +1,151 @@
+#background-curve-cont {
+    position: relative;
+    .bg-curve {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+    
+    .bg-curve svg {
+        width: calc(100% + 1.3px);
+        height: 68px;
+    }
+    
+    .bg-curve .shape-fill {
+        fill: #FEFAFB;
+    }
+}
+
+#contact-form-section {
+    padding: 120px 60px 60px 60px;
+    @include gradient__bg;
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100%;
+    h2 {
+        font-size: 20px;
+        font-family: $headingfont;
+        margin-bottom: 40px;
+    }
+    #contactform {
+        label {
+            display: block;
+            width: 100%;
+            font-family: $mainfont;
+            font-size: 16px;
+            margin: 0 0 5px 8px;
+        }
+        input, textarea {
+            display: block;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-family: $mainfont;
+            font-size: 14px;
+            background-color: #ffffffb3;
+            margin-bottom: 8px;
+            resize: none;
+        }
+        textarea {
+            height: 150px;
+        }
+        button {
+            @include button;
+            background-color: $darkpink;
+            font-size: 13px;
+            padding: 10px 20px;
+            margin: 20px 0;
+        }
+        .success, .danger {
+            font-family: $mainfont;
+            font-size: 13px;
+        }
+        .success {
+            background-color: rgb(145, 197, 145);
+            padding: 10px 20px;
+            border-radius: 10px;
+            width: auto;
+            display: inline-block;
+        }
+        .danger {
+            background-color: rgb(244, 162, 68);
+            padding: 10px 20px;
+            border-radius: 10px;
+            width: auto;
+            display: inline-block;
+        }
+        input:focus, textarea:focus, button:focus {
+            outline: none;
+            box-shadow: 0px 0px 10px 0px rgba(240,202,212,0.75) inset;
+            -webkit-box-shadow: 0px 0px 10px 0px rgba(240,202,212,0.75) inset;
+            -moz-box-shadow: 0px 0px 10px 0px rgba(240,202,212,0.75) inset;
+        }
+    }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+    #background-curve-cont {
+        .bg-curve svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 93px;
+        }
+    }
+    #contact-form-section {
+        padding: 130px 100px 60px 100px;
+        h2 {
+            font-size: 25px;
+        }
+        #contactform {
+            label {
+                font-size: 18px;
+            }
+            input, textarea {
+                font-size: 16px;
+            }
+            button {
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    #contact-form-section {
+        padding: 130px 100px 60px 100px;
+        h2 {
+            font-size: 25px;
+        }
+        #contactform {
+            max-width: 526px;
+            label {
+                font-size: 18px;
+            }
+            input, textarea {
+                font-size: 16px;
+            }
+            button {
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1440px) {
+
+}
