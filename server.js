@@ -5,6 +5,7 @@ const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
+const fs = require("fs");
 
 //server used to send emails and make API calls
 const port = 5100;
@@ -25,8 +26,8 @@ const emailUser = passwords.EMAIL_USER;
 const emailPass = passwords.EMAIL_PASS;
 //console.log(passwords.EMAIL_USER);
 //console.log(passwords.EMAIL_PASS);
-console.log(emailUser);
-console.log(emailPass);
+//console.log(emailUser);
+//console.log(emailPass);
 
 const contactEmail = nodemailer.createTransport({
   service: "gmail",
@@ -52,6 +53,16 @@ contactEmail.verify((error) => {
 
 const { Configuration, OpenAIApi } = require("openai");
 const openAiApiKey = passwords.OPENAI_API_KEY;
+// Content coming from config.json file
+//const gptPrompt = passwords.GPT_PROMPT;
+//console.log(gptPrompt);
+
+// using require fs read the text file in the root folder
+const buffer = fs.readFileSync("prompt.txt");
+// use the toString() method to convert Buffer into String
+const promptContext = buffer.toString();
+// Console logging information from the text file in the terminal to see if it is reading the text file accurately
+//console.log(promptContext);
 
 const config = new Configuration({
   apiKey: openAiApiKey,
@@ -62,15 +73,16 @@ const openai = new OpenAIApi(config);
 app.post("/chatgpt", async (req, res) => {
   const { prompt } = req.body;
 
-  const completion = await openai.createCompletion({
-    model: "text-davinci-003",
+  const completion = await openai.createChatCompletion({
+    //model: "text-davinci-003",
+    model: "gpt-3.5-turbo",
     max_tokens: 150,
     temperature: 0.7,
-    //messages: [{ role: "user", content: "tell me a joke" }],
-    prompt: prompt,
+    messages: [{ role: "user", content: promptContext + prompt }],
+    //prompt: promptContext + prompt,
   });
-
-  res.send(completion.data.choices[0].text);
+  res.send(completion.data.choices[0].message.content);
+  //res.send(completion.data.choices[0].text);
 });
 
 // router.post("/chatgpt", async (req, res) => {

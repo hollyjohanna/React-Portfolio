@@ -33,6 +33,7 @@ const ChatBox = () => {
         <input
           id="question"
           type="text"
+          autoComplete="off"
           value={prompt}
           onChange={handlePromptChange}
         />

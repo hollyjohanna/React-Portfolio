@@ -20,4 +20,4 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser. As this project connects to gmail to sned emails and the OpenAI API you will need to include these credentials yourself to get it to work with those elements.
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser. As this project connects to gmail to send emails and the OpenAI API you will need to include these credentials yourself to get it to work with those elements.
