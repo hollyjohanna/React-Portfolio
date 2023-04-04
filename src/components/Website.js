@@ -7,10 +7,11 @@ import Footer from "../components/Footer";
 // Import Pages
 import Home from "./../pages/Home";
 import Portfolio from "./../pages/Portfolio";
-import AboutMe from "../pages/AboutMe";
 import WackyWeka from "../pages/WackyWeka";
 import GigFort from "../pages/GigFort";
 import Kiwiburn from "../pages/Kiwiburn";
+// Import Components
+import ScrollToTopBtn from "./ScrollToTopBtn";
 // Import Dependencies
 import { Routes, Route, HashRouter } from "react-router-dom";
 
@@ -19,11 +20,11 @@ function Website() {
     <>
       <HashRouter>
         <ScrollToTop />
+        <ScrollToTopBtn />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/aboutme" element={<AboutMe />} />
           <Route path="/wackywekaproject" element={<WackyWeka />} />
           <Route path="/gigfortproject" element={<GigFort />} />
           <Route path="/kiwiburnproject" element={<Kiwiburn />} />

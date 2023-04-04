@@ -10,18 +10,18 @@ const MobileMenu = ({ closeMethod }) => {
           </Link>
         </li>
         <li>
-          <Link to="/#contactform" onClick={closeMethod}>
-            Contact
-          </Link>
-        </li>
-        <li>
-          <Link to="/portfolio" onClick={closeMethod}>
-            Portfolio
-          </Link>
-        </li>
-        <li>
-          <Link to="/aboutme" onClick={closeMethod}>
+          <Link to="/#about-section" onClick={closeMethod}>
             About Me
+          </Link>
+        </li>
+        <li>
+          <Link to="/#hm-pg-projects-container" onClick={closeMethod}>
+            Projects
+          </Link>
+        </li>
+        <li>
+          <Link to="/#contact-form-section" onClick={closeMethod}>
+            Contact
           </Link>
         </li>
       </ul>

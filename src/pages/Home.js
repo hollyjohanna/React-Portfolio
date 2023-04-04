@@ -1,8 +1,10 @@
 import Hero from "../components/Hero";
+import ChatBox from "../components/ChatBox";
+import AboutSection from "../components/AboutSection";
 import HomePageSkills from "../components/HomePageSkills";
 import HomePageProjects from "../components/HomePageProjects";
 import ContactForm from "../components/ContactForm";
-import ChatBox from "../components/ChatBox";
+import LanguageSkills from "../components/LanguageSkills";
 // import images
 // import bgcurve from "../img/background-curve.svg";
 
@@ -10,6 +12,8 @@ const Home = () => {
   return (
     <>
       <Hero />
+      <ChatBox />
+      <AboutSection />
       <HomePageSkills />
       <HomePageProjects />
       <div id="background-curve-cont">
@@ -31,7 +35,7 @@ const Home = () => {
         <h2>Contact Me!</h2>
         <ContactForm />
       </div>
-      <ChatBox />
+      <LanguageSkills />
     </>
   );
 };

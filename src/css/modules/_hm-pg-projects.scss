@@ -1,6 +1,6 @@
 #hm-pg-projects-container {
     width: 100%;
-    padding: 40px 60px;
+    padding: 60px 60px 40px 60px;
     h2 {
         font-size: 20px;
         font-family: $headingfont;
@@ -12,9 +12,23 @@
         margin: auto;
         row-gap: 30px;
         max-width: 305px;
+        #carousel-fade {
+            display: none;
+            height: 492px;
+            width: 200px;
+            position: absolute;
+            z-index: 6;
+            top: 0;
+            right: -1px;
+            background: rgb(254,250,251);
+            background: linear-gradient(90deg, rgba(254,250,251,0.0046612394957983305) 0%, rgba(254,250,251,0) 0%, rgba(254,250,251,1) 100%);
+        }
         .projects-slider {
             width: 100%;
             height: auto;
+            .carousel-item-padding {
+                padding: 0 10px;
+            }
             .project-card {
                 text-align: center;
                 width: 100%;
@@ -111,6 +125,9 @@
         }
         #projects-container {
             max-width: 926px;
+            #carousel-fade {
+                display: block;
+            }
             .projects-slider {
                 .project-card {
                     padding: 50px 30px;

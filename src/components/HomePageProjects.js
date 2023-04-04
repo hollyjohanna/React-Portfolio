@@ -84,12 +84,16 @@ const HomePageProjects = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
       >
+        <div id="carousel-fade"></div>
         <Carousel
           className="projects-slider"
           responsive={responsive}
+          swipeable={true}
           infinite={true}
           partialVisible={false}
           itemClass="carousel-item-padding"
+          autoPlay={true}
+          autoPlaySpeed={5000}
         >
           {projects.map((project, index) => (
             <div className="project-card" key={index}>

@@ -6,7 +6,8 @@
 @import "./modules/hm-pg-projects";
 @import "./modules/contact-section";
 @import "./modules/chat-box";
-@import "./modules/about-pg";
+@import "./modules/about-section";
+@import "./modules/languages-skills";
 @import "./modules/footer";
 @import "./modules/animations";
 
@@ -20,8 +21,18 @@
 body {
     background-color: $backgroundpink;
     min-height: 100vh;
-    // cursor: none;
+    //cursor: none;
+    cursor: default;
 }
+
+.scroll-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9;
+    font-size: 25px;
+    cursor: pointer;
+  }  
 
 .cursor{
     z-index: 999;

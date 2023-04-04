@@ -28,13 +28,13 @@ const Navbar = () => {
               <Link to="/#">Home</Link>
             </li>
             <li>
+              <Link to="/#about-section">About Me</Link>
+            </li>
+            <li>
+              <Link to="/#hm-pg-projects-container">Projects</Link>
+            </li>
+            <li>
               <Link to="/#contact-form-section">Contact</Link>
-            </li>
-            <li>
-              <Link to="/portfolio">Portfolio</Link>
-            </li>
-            <li>
-              <Link to="/aboutme">About Me</Link>
             </li>
           </ul>
           <span id="vertical-line"></span>
