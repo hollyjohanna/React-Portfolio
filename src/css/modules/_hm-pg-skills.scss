@@ -9,6 +9,7 @@
     height: 100%;
     h2 {
         font-size: 20px;
+        text-align: center;
         font-family: $headingfont;
         margin-bottom: 40px;
     }
@@ -59,10 +60,17 @@
     }
 }
 
+//======================================================================================
+//                                      MEDIA QUERIES
+//======================================================================================
+
+
 @media screen and (min-width: 768px) {
     #skills-container {
+        padding: 100px 60px;
         h2 {
             font-size: 25px;
+            text-align: left;
         }
         #icon-container {
             .service-card {
@@ -74,8 +82,7 @@
 
 @media screen and (min-width: 1024px) {
     #skills-container {
-        background-position-x: center;
-        padding: 100px 70px;
+        padding: 150px 70px;
         h2 {
             font-size: 35px;
             font-weight: 100;
@@ -101,17 +108,16 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
     #skills-container {
-        background-position-x: center;
-        padding: 100px 70px;
         #content-container {
-            max-width: 970px;
+            max-width: 1000px;
             margin: auto;
         }
         h2 {
             font-size: 40px;
             font-weight: 100;
+            margin-bottom: 70px;
         }
         #icon-container {
             .service-card {
@@ -127,7 +133,7 @@
                     margin-bottom: 15px;
                 }
                 p {
-                    font-size: 16px;
+                    font-size: 18px;
                 }
             }
         }

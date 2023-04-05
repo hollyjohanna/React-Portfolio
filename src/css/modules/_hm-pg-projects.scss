@@ -1,20 +1,22 @@
 #hm-pg-projects-container {
     width: 100%;
     padding: 60px 60px 40px 60px;
-    h2 {
-        font-size: 20px;
-        font-family: $headingfont;
-        margin-bottom: 40px;
-    }
     #projects-container {
         display: flex;
         flex-wrap: wrap;
         margin: auto;
         row-gap: 30px;
         max-width: 305px;
+        h2 {
+            width: 100%;
+            font-size: 20px;
+            font-family: $headingfont;
+            text-align: center;
+            margin-bottom: 20px;
+        }
         #carousel-fade {
             display: none;
-            height: 492px;
+            height: 100%;
             width: 200px;
             position: absolute;
             z-index: 6;
@@ -98,15 +100,17 @@
 
 @media screen and (min-width: 768px) {
     #hm-pg-projects-container {
-        padding: 40px 100px;
-        h2 {
-            font-size: 25px;
-        }
+        padding: 100px;
         #projects-container {
             max-width: 568px;
+            h2 {
+                font-size: 25px;
+                text-align: left;
+            }
             .projects-slider {
                 .project-card {
                     h2 {
+                        text-align: center;
                         font-family: $headingfont;
                         font-size: 20px;
                         margin-bottom: 40px;
@@ -119,12 +123,13 @@
 
 @media screen and (min-width: 1024px) {
     #hm-pg-projects-container {
-        padding: 100px 70px;
-        h2 {
-            font-size: 35px;
-        }
+        padding: 150px 70px;
         #projects-container {
             max-width: 926px;
+            h2 {
+                font-size: 35px;
+                font-weight: 100;
+            }
             #carousel-fade {
                 display: block;
             }
@@ -140,24 +145,21 @@
     }   
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
     #hm-pg-projects-container {
-        padding: 100px 70px;
         margin: 0;
         width: 100%;
-        h2 {
-            font-size: 40px;
-            max-width: 1100px;
-            margin: auto;
-            margin-bottom: 40px;
-        }
         #projects-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             column-gap: 22px;
-            max-width: 1100px;
+            max-width: 1300px;
             margin: auto;
+            h2 {
+                font-size: 40px;
+                margin-bottom: 50px;
+            }
             .projects-slider {
                 .project-card {
                     padding: 50px 27px;

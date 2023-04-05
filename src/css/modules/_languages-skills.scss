@@ -11,7 +11,7 @@
         flex-wrap: wrap;
         justify-content: center;
         margin: auto;
-        max-width: 549px;
+        max-width: 329px;
         .language-block {
             margin-bottom: 25px;
             .language-icon {
@@ -43,4 +43,68 @@
             }
         }
     }
+}
+
+//======================================================================================
+//                                      MEDIA QUERIES
+//======================================================================================
+
+
+@media screen and (min-width: 768px) {
+    #language-skills-section {
+        padding: 100px;
+        h2 {
+            font-size: 25px;
+        }
+        #language-icon-container {
+            max-width: 549px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #language-skills-section {
+        padding: 100px;
+        h2 {
+            font-size: 35px;
+            font-weight: 100;
+        }
+        #language-icon-container {
+            max-width: 549px;
+            .language-block {
+                .language-icon {
+                    width: 100px;
+                    height: 100px;
+                    .lang-logo {
+                        width: 40%;
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }  
+}
+
+@media screen and (min-width: 1200px) {
+    #language-skills-section {
+        padding: 150px;
+        h2 {
+            font-size: 40px;
+            font-weight: 100;
+            margin-bottom: 70px;
+        }
+        #language-icon-container {
+            max-width: 700px;
+            .language-block {
+                .language-icon {
+                    width: 120px;
+                    height: 120px;
+                    .lang-logo {
+                        width: 40%;
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }  
 }

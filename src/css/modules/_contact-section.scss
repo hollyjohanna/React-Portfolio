@@ -29,8 +29,19 @@
         font-size: 20px;
         font-family: $headingfont;
         margin-bottom: 40px;
+        text-align: center;
+    }
+    #contactform-tagline-mobile, #contactform-tagline {
+        font-size: 16px;
+        font-family: $mainfont;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    #contactform-tagline {
+        display: none;
     }
     #contactform {
+        z-index: 1;
         label {
             display: block;
             width: 100%;
@@ -107,6 +118,11 @@
 	}
 }
 
+//======================================================================================
+//                                      MEDIA QUERIES
+//======================================================================================
+
+
 @media screen and (min-width: 768px) {
     #background-curve-cont {
         .bg-curve svg {
@@ -117,11 +133,19 @@
         }
     }
     #contact-form-section {
-        padding: 130px 100px 60px 100px;
+        padding: 150px 100px 60px 100px;
         h2 {
             font-size: 25px;
         }
+        #contactform-tagline-mobile {
+            display: none;
+        } 
+        #contactform-tagline {
+            display: block;
+        }
         #contactform {
+            max-width: 526px;
+            margin: auto;
             label {
                 font-size: 18px;
             }
@@ -136,9 +160,14 @@
 }
 @media screen and (min-width: 1024px) {
     #contact-form-section {
-        padding: 130px 100px 60px 100px;
+        padding: 200px 150px 150px;
         h2 {
-            font-size: 25px;
+            font-size: 35px;
+            font-weight: 100;
+        }
+        #contactform-tagline {
+            font-size: 18px;
+            margin-bottom: 50px;
         }
         #contactform {
             max-width: 526px;
@@ -154,6 +183,31 @@
         }
     }
 }
-@media screen and (min-width: 1440px) {
-
+@media screen and (min-width: 1200px) {
+    #contact-form-section {
+        padding: 200px 150px 150px;
+        h2 {
+            font-size: 40px;
+            font-weight: 100;
+            margin-bottom: 70px;
+        }
+        #contactform-tagline {
+            font-size: 18px;
+            margin: auto;
+            margin-bottom: 50px;
+            max-width: 900px;
+        }
+        #contactform {
+            max-width: 540px;
+            label {
+                font-size: 18px;
+            }
+            input, textarea {
+                font-size: 16px;
+            }
+            button {
+                font-size: 18px;
+            }
+        }
+    }
 }

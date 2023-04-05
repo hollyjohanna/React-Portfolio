@@ -73,13 +73,19 @@
     }
 }
 
+
+//======================================================================================
+//                                      MEDIA QUERIES
+//======================================================================================
+
+
 @media screen and (min-width: 768px) {
     #footer {
         #upper-footer {
             padding: 70px 50px;
             h2 {
                 font-family: $headingfont;
-                font-size: 30px;
+                font-size: 25px;
                 margin-bottom: 40px;
             }
             #link-container {

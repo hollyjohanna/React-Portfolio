@@ -38,13 +38,6 @@ const HomePageProjects = () => {
       image:
         "https://upload.wikimedia.org/wikipedia/commons/b/b7/0A2A9595_Weka.jpg",
     },
-    {
-      title: "Wacky Weka",
-      subtitle: "Multipage React Website for Plant Nursery",
-      url: "/wackywekaproject",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/b/b7/0A2A9595_Weka.jpg",
-    },
   ];
 
   const responsive = {
@@ -76,7 +69,6 @@ const HomePageProjects = () => {
 
   return (
     <div id="hm-pg-projects-container">
-      <h2>Recent Projects</h2>
       <div
         id="projects-container"
         data-aos="fade-up"
@@ -84,6 +76,7 @@ const HomePageProjects = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
       >
+        <h2>Recent Projects</h2>
         <div id="carousel-fade"></div>
         <Carousel
           className="projects-slider"

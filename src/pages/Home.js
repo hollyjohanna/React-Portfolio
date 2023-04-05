@@ -31,10 +31,7 @@ const Home = () => {
           </svg>
         </div>
       </div>
-      <div id="contact-form-section">
-        <h2>Contact Me!</h2>
-        <ContactForm />
-      </div>
+      <ContactForm />
       <LanguageSkills />
     </>
   );

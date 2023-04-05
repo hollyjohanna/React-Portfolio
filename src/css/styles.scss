@@ -32,7 +32,8 @@ body {
     z-index: 9;
     font-size: 25px;
     cursor: pointer;
-  }  
+    transition: all 0.3s ease-in-out;
+}  
 
 .cursor{
     z-index: 999;
@@ -68,4 +69,36 @@ body {
     opacity: 0.2;
     transform: translate(-33%, -33%);
     border-radius: 50%;
+}
+
+//======================================================================================
+//                                      MEDIA QUERIES
+//======================================================================================
+
+
+@media screen and (min-width: 768px) {
+    .scroll-to-top-button {
+        font-size: 35px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .scroll-to-top-button {
+        font-size: 40px;
+        bottom: 40px;
+        right: 40px;
+    }
+    .scroll-to-top-button:hover {
+        color: $darkpink;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .scroll-to-top-button {
+        font-size: 40px;
+        bottom: 50px;
+        right: 50px;
+    }
 }

@@ -11,8 +11,8 @@ const AboutSection = () => {
   }, []);
   return (
     <div id="about-section">
-      <h2>About Me</h2>
       <div id="about-content-container">
+        <h2>About Me</h2>
         <img
           src={holliday}
           alt="Face shot of me!"

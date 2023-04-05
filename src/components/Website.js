@@ -16,6 +16,10 @@ import ScrollToTopBtn from "./ScrollToTopBtn";
 import { Routes, Route, HashRouter } from "react-router-dom";
 
 function Website() {
+  console.log(
+    "Hello there, stoked you're having a look at whats going on in here ;) have fun looking around"
+  );
+  console.log("<3 <3 <3");
   return (
     <>
       <HashRouter>
