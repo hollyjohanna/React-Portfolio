@@ -616,11 +616,11 @@
 #hm-pg-projects-container #projects-container .projects-slider .project-card img {
   width: 100%;
   height: 178px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin-bottom: 20px;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
 }
 
 #hm-pg-projects-container #projects-container .projects-slider .project-card a {
@@ -737,8 +737,6 @@
   }
   #hm-pg-projects-container #projects-container .projects-slider .project-card img {
     width: 90%;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
 }
 
@@ -1509,6 +1507,64 @@
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
+}
+
+.spec-project-container .project-hero-container {
+  padding: 60px 60px 20px 60px;
+  background: #fefafb;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(254, 250, 251, 0)), to(#f0cad4));
+  background: linear-gradient(0deg, rgba(254, 250, 251, 0) 0%, #f0cad4 100%);
+}
+
+.spec-project-container .project-hero-container h2 {
+  font-size: 20px;
+  text-align: center;
+  font-family: "Julius Sans One", sans-serif;
+  margin-bottom: 50px;
+}
+
+.spec-project-container .project-hero-container img {
+  width: 100%;
+}
+
+.spec-project-container .project-content-container {
+  padding: 20px 60px 60px 60px;
+}
+
+.spec-project-container .project-content-container p {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+.spec-project-container .project-content-container img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 400px;
+}
+
+.spec-project-container .project-linkbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.spec-project-container .project-linkbtn img {
+  cursor: pointer;
+  width: 50px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.spec-project-container .project-linkbtn img:hover {
+  scale: 1.1;
 }
 
 #footer #upper-footer {

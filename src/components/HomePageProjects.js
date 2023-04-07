@@ -7,9 +7,19 @@ import "aos/dist/aos.css";
 // React Carousel Imports
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+// image imports
+import gigfort1 from "./../img/gig-fort1.png";
+import divinestays from "./../img/divine-stays.png";
+import wackyweka from "./../img/wacky-weka.png";
 
 const HomePageProjects = () => {
   const projects = [
+    {
+      title: "Wacky Weka",
+      subtitle: "Multipage React Website for Plant Nursery",
+      url: "/wackywekaproject",
+      image: wackyweka,
+    },
     {
       title: "Kiwiburn",
       subtitle: "Multipage Event Website built with React",
@@ -18,25 +28,22 @@ const HomePageProjects = () => {
         "https://kiwiburn.com/wp-content/uploads/2017/09/Rob-Tangent-Kiwiburn-2017-121-of-299-web.jpg",
     },
     {
+      title: "Wetaverse",
+      subtitle: "Multipage React Website for Plant Nursery",
+      url: "/wetaverseproject",
+      image: wackyweka,
+    },
+    {
       title: "Gig Fort",
       subtitle: "Mobile App Design - Gig finding app",
       url: "/gigfortproject",
-      image:
-        "https://images.unsplash.com/photo-1604177052603-c2b4cff228db?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80",
+      image: gigfort1,
     },
     {
-      title: "Wacky Weka",
-      subtitle: "Multipage React Website for Plant Nursery",
-      url: "/wackywekaproject",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/b/b7/0A2A9595_Weka.jpg",
-    },
-    {
-      title: "Wacky Weka",
-      subtitle: "Multipage React Website for Plant Nursery",
-      url: "/wackywekaproject",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/b/b7/0A2A9595_Weka.jpg",
+      title: "Divine Stays",
+      subtitle: "Accommodation Booking Site",
+      url: "/divinestaysproject",
+      image: divinestays,
     },
   ];
 
