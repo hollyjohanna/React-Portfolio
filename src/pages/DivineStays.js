@@ -21,15 +21,18 @@ import jqueryimg from "./../img/jquery.png";
 import mapboximg from "./../img/mapbox.png";
 import figmaimg from "./../img/figma.png";
 
-import gigfortmoodstyle from "./../img/gigfort-mood-style.png";
-import gigforthifi1 from "./../img/gigfort-hifi-1.png";
-import gigforthifi2 from "./../img/gigfort-hifi-2.png";
-import gigforthifi3 from "./../img/gigfort-hifi-3.png";
-import gigforthifi4 from "./../img/gigfort-hifi-4.png";
-import gigforthifi5 from "./../img/gigfort-hifi-5.png";
-import gigfortlofi1 from "./../img/gigfort-lofi-1.png";
-import gigfortlofi2 from "./../img/gigfort-lofi-2.png";
-import gigfortlofi3 from "./../img/gigfort-lofi-3.png";
+import divinemoodstyle from "./../img/divine-mood-style.png";
+import divinehifi1 from "./../img/divine-hifi1.png";
+import divinehifi2 from "./../img/divine-hifi2.png";
+import divinehifi3 from "./../img/divine-hifi-3.png";
+import divinehifi4 from "./../img/divine-hifi4.png";
+import divinehifi5 from "./../img/divine-hifi5.png";
+import divinehifi6 from "./../img/divine-hifi-6.png";
+import divinehifi7 from "./../img/divine-hifi7.png";
+import divinelofi1 from "./../img/divine-lofi1.png";
+import divinelofi2 from "./../img/divine-lofi2.png";
+import divinelofi3 from "./../img/divine-lofi3.png";
+import divinelofi4 from "./../img/divine-lofi4.png";
 
 const DivineStays = () => {
   const [showModal, setShowModal] = useState(false);
@@ -95,7 +98,7 @@ const DivineStays = () => {
           nights) and display accommodation options based on the information
           given by the user.
         </p>
-        <p>
+        <p className="bottom-text">
           The project consisted of a research phase, design phase and a
           development phase. I conducted several UX research processes including
           competitor analyses, SWOT analyses, user interviews and user flows.
@@ -121,109 +124,145 @@ const DivineStays = () => {
           <div
             onClick={() => {
               setShowModal(true);
-              setModalImgSrc(gigforthifi5);
+              setModalImgSrc(divinehifi1);
             }}
           >
             <img
               className="carousel-img"
-              src={gigforthifi5}
-              alt="Gig Fort Mobile"
+              src={divinehifi1}
+              alt="Divine Stays Hi-Fi"
             ></img>
           </div>
           <div
             onClick={() => {
               setShowModal(true);
-              setModalImgSrc(gigforthifi1);
+              setModalImgSrc(divinehifi2);
             }}
           >
             <img
               className="carousel-img"
-              src={gigforthifi1}
-              alt="Gig Fort Mobile"
+              src={divinehifi2}
+              alt="Divine Stays Hi-Fi"
             ></img>
           </div>
           <div
             onClick={() => {
               setShowModal(true);
-              setModalImgSrc(gigforthifi2);
+              setModalImgSrc(divinehifi3);
             }}
           >
             <img
               className="carousel-img"
-              src={gigforthifi2}
-              alt="Gig Fort Mobile"
+              src={divinehifi3}
+              alt="Divine Stays Hi-Fi"
             ></img>
           </div>
           <div
             onClick={() => {
               setShowModal(true);
-              setModalImgSrc(gigforthifi3);
+              setModalImgSrc(divinehifi4);
             }}
           >
             <img
               className="carousel-img"
-              src={gigforthifi3}
-              alt="Gig Fort Mobile"
+              src={divinehifi4}
+              alt="Divine Stays Hi-Fi"
             ></img>
           </div>
           <div
             onClick={() => {
               setShowModal(true);
-              setModalImgSrc(gigforthifi4);
+              setModalImgSrc(divinehifi5);
             }}
           >
             <img
               className="carousel-img"
-              src={gigforthifi4}
-              alt="Gig Fort Mobile"
+              src={divinehifi5}
+              alt="Divine Stays Hi-Fi"
             ></img>
           </div>
           <div
             onClick={() => {
               setShowModal(true);
-              setModalImgSrc(gigfortlofi1);
+              setModalImgSrc(divinehifi6);
             }}
           >
             <img
               className="carousel-img"
-              src={gigfortlofi1}
-              alt="Gig Fort Lo fi"
+              src={divinehifi6}
+              alt="Divine Stays Hi-Fi"
             ></img>
           </div>
           <div
             onClick={() => {
               setShowModal(true);
-              setModalImgSrc(gigfortlofi2);
+              setModalImgSrc(divinehifi7);
             }}
           >
             <img
               className="carousel-img"
-              src={gigfortlofi2}
-              alt="Gig Fort Lo fi"
+              src={divinehifi7}
+              alt="Divine Stays Hi-Fi"
             ></img>
           </div>
           <div
             onClick={() => {
               setShowModal(true);
-              setModalImgSrc(gigfortlofi3);
+              setModalImgSrc(divinelofi1);
             }}
           >
             <img
               className="carousel-img"
-              src={gigfortlofi3}
-              alt="Gig Fort Lo fi"
+              src={divinelofi1}
+              alt="Divine Stays Lo-Fi"
             ></img>
           </div>
           <div
             onClick={() => {
               setShowModal(true);
-              setModalImgSrc(gigfortmoodstyle);
+              setModalImgSrc(divinelofi2);
             }}
           >
             <img
               className="carousel-img"
-              src={gigfortmoodstyle}
-              alt="Gig Fort Moodboard"
+              src={divinelofi2}
+              alt="Divine Stays Lo-Fi"
+            ></img>
+          </div>
+          <div
+            onClick={() => {
+              setShowModal(true);
+              setModalImgSrc(divinelofi3);
+            }}
+          >
+            <img
+              className="carousel-img"
+              src={divinelofi3}
+              alt="Divine Stays Lo-Fi"
+            ></img>
+          </div>
+          <div
+            onClick={() => {
+              setShowModal(true);
+              setModalImgSrc(divinelofi4);
+            }}
+          >
+            <img
+              className="carousel-img"
+              src={divinelofi4}
+              alt="Divine Stays Lo-Fi"
+            ></img>
+          </div>
+          <div
+            onClick={() => {
+              setShowModal(true);
+              setModalImgSrc(divinemoodstyle);
+            }}
+          >
+            <img
+              className="carousel-img"
+              src={divinemoodstyle}
+              alt="Divine Stays Moodboard"
             ></img>
           </div>
         </Carousel>

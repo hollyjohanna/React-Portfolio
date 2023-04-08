@@ -80,7 +80,7 @@ const GigFort = () => {
         <img src={gigfortmain} alt="Gig Fort Main Banner"></img>
       </div>
       <div className="project-content-container">
-        <p>
+        <p className="bottom-text">
           Gig Fort is an event finding app specific to the Wellington region
           that helps users quickly and easily find events and gigs that are on
           using a map interface without the fuss of sifting through pages of
