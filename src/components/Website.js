@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 // Import Pages
 import Home from "./../pages/Home";
-import Portfolio from "./../pages/Portfolio";
+import DivineStays from "../pages/DivineStays";
 import WackyWeka from "../pages/WackyWeka";
 import GigFort from "../pages/GigFort";
 import Kiwiburn from "../pages/Kiwiburn";
@@ -28,7 +28,7 @@ function Website() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/divinestaysproject" element={<DivineStays />} />
           <Route path="/wackywekaproject" element={<WackyWeka />} />
           <Route path="/gigfortproject" element={<GigFort />} />
           <Route path="/kiwiburnproject" element={<Kiwiburn />} />
