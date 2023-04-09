@@ -108,6 +108,9 @@
   .navbar #nav-menu {
     font-size: 65px;
   }
+  .navbar #projects-dropdown {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -124,7 +127,7 @@
     display: inline-block;
     /* Fade in */
   }
-  .navbar #desktop-ul li a {
+  .navbar #desktop-ul li a, .navbar #desktop-ul li span {
     text-decoration: none;
     font-family: "Julius Sans One", sans-serif;
     cursor: pointer;
@@ -137,10 +140,10 @@
     position: relative;
     padding: 0.2em 0;
   }
-  .navbar #desktop-ul li a:hover {
+  .navbar #desktop-ul li a:hover, .navbar #desktop-ul li span:hover {
     color: #d67992;
   }
-  .navbar #desktop-ul li a::after {
+  .navbar #desktop-ul li a::after, .navbar #desktop-ul li span::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -159,6 +162,35 @@
     opacity: 1;
     -webkit-transform: translate3d(0, 0.2em, 0);
             transform: translate3d(0, 0.2em, 0);
+  }
+  .navbar #desktop-ul li span:hover::after, .navbar #desktop-ul li span:focus::after {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0.2em, 0);
+            transform: translate3d(0, 0.2em, 0);
+  }
+  .navbar #desktop-ul li #projects-dropdown {
+    display: block;
+    position: absolute;
+    top: 108px;
+    padding: 0 0 0 50px;
+    z-index: 10;
+  }
+  .navbar #desktop-ul li #projects-dropdown ul {
+    padding: 20px;
+    background-color: #fefafb;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    border-radius: 0 0 10px 10px;
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  }
+  .navbar #desktop-ul li #projects-dropdown ul li {
+    display: block;
+  }
+  .navbar #desktop-ul li #projects-dropdown ul li a {
+    margin: 0 0 10px 0;
+    font-size: 16px;
   }
   .navbar #nav-menu {
     display: none;
@@ -202,7 +234,7 @@
   text-align: center;
 }
 
-#mobile-menu ul li a {
+#mobile-menu ul li a, #mobile-menu ul li span {
   text-decoration: none;
   font-family: "Julius Sans One", sans-serif;
   cursor: pointer;
@@ -218,10 +250,33 @@
   color: #d67992;
 }
 
+#mobile-menu ul li #projects-dropdown-mobile ul {
+  margin: 20px 0;
+}
+
+#mobile-menu ul li #projects-dropdown-mobile ul li {
+  display: block;
+}
+
+#mobile-menu ul li #projects-dropdown-mobile ul li a {
+  margin: 0 0 20px 0;
+  font-size: 16px;
+}
+
 @media screen and (min-width: 768px) {
-  #mobile-menu ul li a {
+  #mobile-menu ul li a, #mobile-menu ul li span {
     margin-bottom: 35px;
     font-size: 35px;
+  }
+  #mobile-menu ul li #projects-dropdown-mobile ul {
+    margin-bottom: 20px;
+  }
+  #mobile-menu ul li #projects-dropdown-mobile ul li {
+    display: block;
+  }
+  #mobile-menu ul li #projects-dropdown-mobile ul li a {
+    margin: 0 0 20px 0;
+    font-size: 20px;
   }
 }
 
@@ -1856,6 +1911,9 @@
   }
   .spec-project-container .project-hero-container h3 {
     font-size: 30px;
+  }
+  .spec-project-container .project-hero-container img {
+    width: 60%;
   }
   .spec-project-container .project-content-container {
     padding: 20px 150px 100px 150px;

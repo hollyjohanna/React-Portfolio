@@ -78,36 +78,46 @@ const DivineStays = () => {
 
   return (
     <div className="spec-project-container">
-      <div
-        className="project-hero-container"
-        data-aos="fade-up"
-        data-aos-delay="70"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-      >
+      <div className="project-hero-container">
         <h2>Divine Stays</h2>
         <h3>Accommodation Booking Website (Single Page)</h3>
-        <img src={divinestays} alt="Divine Stays Main Banner"></img>
+        <img
+          src={divinestays}
+          alt="Divine Stays Main Banner"
+          data-aos="fade-up"
+          data-aos-delay="70"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        ></img>
       </div>
       <div className="project-content-container">
         <p>
           Divine Stays is an accommodation booking website created as the second
           project for my Diploma in Web/UX Design and Development. I was given
-          the task to design and develop a single page website that would allow
-          users to input holiday information (number of guests, numbers of
+          the task to design and develop a single-page website that would allow
+          users to input holiday information (number of guests, number of
           nights) and display accommodation options based on the information
-          given by the user.
+          given by the user. The app was to have a specific niche, for this
+          project I decided to create a vineyard-specific accommodation
+          listings.
         </p>
-        <p className="bottom-text">
-          The project consisted of a research phase, design phase and a
+        <p>
+          The project consisted of a research phase, a design phase and a
           development phase. I conducted several UX research processes including
           competitor analyses, SWOT analyses, user interviews and user flows.
-          During the design phase I created preliminary design concepts to
-          inform the design of the final product including a mood-board, a style
-          tile, wireframes, low fidelity prototypes and high fidelity
-          prototypes. As a final stage in the design phase the hi-fi prototypes
-          were user tested and adjusted based off of feedback recieved from this
+          During the design phase, I created preliminary design concepts to
+          inform the design of the final product including a mood board, a style
+          tile, wireframes, low-fidelity prototypes and high-fidelity
+          prototypes. As a final stage in the design phase, the hi-fi prototypes
+          were user tested and adjusted based on feedback received from this
           process before the development process began.
+        </p>
+        <p className="bottom-text">
+          The development of this project was achieved by using HTML, Sass and
+          vanilla Javascript. I used Swiper.js to keep the project as a
+          single-page application that was able to appear as multiple pages. I
+          also implemented the use of Mapbox to add a map feature to the final
+          slide to show users where their accommodation options were on a map.
         </p>
         <Carousel
           customRightArrow={<CustomRightArrow />}

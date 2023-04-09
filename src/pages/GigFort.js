@@ -68,16 +68,17 @@ const GigFort = () => {
 
   return (
     <div className="spec-project-container">
-      <div
-        className="project-hero-container"
-        data-aos="fade-up"
-        data-aos-delay="70"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-      >
+      <div className="project-hero-container">
         <h2>Gig Fort</h2>
         <h3>Application Design</h3>
-        <img src={gigfortmain} alt="Gig Fort Main Banner"></img>
+        <img
+          src={gigfortmain}
+          alt="Gig Fort Main Banner"
+          data-aos="fade-up"
+          data-aos-delay="70"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        ></img>
       </div>
       <div className="project-content-container">
         <p className="bottom-text">

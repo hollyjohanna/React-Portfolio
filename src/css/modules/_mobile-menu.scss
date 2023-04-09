@@ -8,7 +8,7 @@
         list-style: none;
         li {
             text-align: center;
-            a {
+            a, span {
                 @include links;
                 color: black;
                 display: inline-block;
@@ -17,6 +17,18 @@
             }
             a:hover {
                 color: $darkpink;
+            }
+            #projects-dropdown-mobile {
+                ul {
+                    margin: 20px 0;
+                    li {
+                        display: block;
+                        a {
+                            margin: 0 0 20px 0;
+                            font-size: 16px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -30,9 +42,21 @@
     #mobile-menu {
         ul {
             li {
-                a {
+                a, span {
                     margin-bottom: 35px;
                     font-size: 35px;
+                }
+                #projects-dropdown-mobile {
+                    ul {
+                        margin-bottom: 20px;
+                        li {
+                            display: block;
+                            a {
+                                margin: 0 0 20px 0;
+                                font-size: 20px;
+                            }
+                        }
+                    }
                 }
             }
         }

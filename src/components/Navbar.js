@@ -8,9 +8,20 @@ import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
   const [MenuIsOpen, openMenu] = useState(false);
+  const [DropdownIsOpen, setDropdownIsOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     openMenu(!MenuIsOpen);
+  };
+
+  const openDropdown = () => {
+    setDropdownIsOpen(!DropdownIsOpen);
+  };
+
+  const handleNavLinkClick = () => {
+    if (DropdownIsOpen) {
+      setDropdownIsOpen(false);
+    }
   };
 
   return (
@@ -24,17 +35,44 @@ const Navbar = () => {
         </div>
         <div id="right-nav">
           <ul id="desktop-ul">
-            <li id="home-link">
-              <Link to="/#">Home</Link>
+            <li id="home-link" onClick={handleNavLinkClick}>
+              <Link to="/#" onClick={handleNavLinkClick}>
+                Home
+              </Link>
             </li>
-            <li>
-              <Link to="/#about-section">About Me</Link>
+            <li onClick={handleNavLinkClick}>
+              <Link to="/#about-section" onClick={handleNavLinkClick}>
+                About Me
+              </Link>
             </li>
-            <li>
-              <Link to="/#hm-pg-projects-container">Projects</Link>
+            <li onClick={openDropdown}>
+              <span>Projects</span>
+              {DropdownIsOpen && (
+                <div id="projects-dropdown">
+                  <ul>
+                    <li>
+                      <Link to="/gigfortproject">Gig Fort</Link>
+                    </li>
+                    <li>
+                      <Link to="/wackywekaproject">Wacky Weka</Link>
+                    </li>
+                    <li>
+                      <Link to="/divinestaysproject">Divine Stays</Link>
+                    </li>
+                    <li>
+                      <Link to="/wetaverseproject">Wetaverse</Link>
+                    </li>
+                    <li>
+                      <Link to="/kiwiburnproject">Kiwiburn</Link>
+                    </li>
+                  </ul>
+                </div>
+              )}
             </li>
-            <li>
-              <Link to="/#contact-form-section">Contact</Link>
+            <li onClick={handleNavLinkClick}>
+              <Link to="/#contact-form-section" onClick={handleNavLinkClick}>
+                Contact
+              </Link>
             </li>
           </ul>
           <span id="vertical-line"></span>
