@@ -98,8 +98,8 @@ const DivineStays = () => {
           users to input holiday information (number of guests, number of
           nights) and display accommodation options based on the information
           given by the user. The app was to have a specific niche, for this
-          project I decided to create a vineyard-specific accommodation
-          listings.
+          project t I decided to create a website for vineyard-specific
+          accommodation listings.
         </p>
         <p>
           The project consisted of a research phase, a design phase and a

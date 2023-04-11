@@ -97,24 +97,35 @@ const WackyWeka = () => {
       </div>
       <div className="project-content-container">
         <p>
-          Wacky Weka is a plant nursery buisness and information website that
+          Wacky Weka is a plant nursery business and information website that
           was created as the final project for my Diploma in Web/UX Design and
-          Development. I was tasked with creating a website for a buisness that
+          Development. I was tasked with creating a website for a business that
           needed a digital platform to advertise their business and give
-          information about their work. The project required a full custom
-          designed site with the capability for the client to add, edit and
-          delete information across the website easily. For this functionality I
-          was tasked with creating a website that had a wordpress backend to
-          enable client editability and a React frontend for a fully custom
-          site.
+          information about their work. The project required a fully
+          custom-designed site with the capability for the client to add, edit
+          and delete information across the website easily.
         </p>
-        <p>The process for this</p>
+        <p>
+          The process for this project included going through all the stages of
+          ideation, Design and development. I began by assessing the needs of
+          the project and the requirements of the business and then created a
+          sitemap to map out how the website would flow and how the content
+          would be organised. Several iterations of the sitemap were created to
+          find the optimal layout with content structured in a logical way. A
+          competitor analysis was conducted and design inspiration was gathered
+          and then the preliminary designs were created. This included a mood
+          board, style tile, wireframes, and lo-fi and hi-fi prototypes. These
+          prototypes were user tested and the designs were altered based on user
+          and client feedback.
+        </p>
         <p className="bottom-text">
-          The development of this project was achieved by using HTML, Sass and
-          vanilla Javascript. I used Swiper.js to keep the project as a
-          single-page application that was able to appear as multiple pages. I
-          also implemented the use of Mapbox to add a map feature to the final
-          slide to show users where their accommodation options were on a map.
+          Finally, for the development of this project, I created a React
+          front-end for the fast reload times and ability to fully customise the
+          code, I used Sass for easier more streamlined styling and linked the
+          app to a WordPress backend. This provided the client with the option
+          to log in to their WordPress Website and add, edit and delete content
+          without the need to contact the developer. This also allowed me to use
+          several WordPress plugins for the optimisation of the website.
         </p>
         <Carousel
           customRightArrow={<CustomRightArrow />}

@@ -11,28 +11,10 @@ import "react-multi-carousel/lib/styles.css";
 import gigfort1 from "./../img/gig-fort1.png";
 import divinestays from "./../img/divine-stays.png";
 import wackyweka from "./../img/wacky-weka.png";
+import wetaverse from "./../img/wetaverse-main.png";
 
 const HomePageProjects = () => {
   const projects = [
-    {
-      title: "Wacky Weka",
-      subtitle: "Multipage React Website for Plant Nursery",
-      url: "/wackywekaproject",
-      image: wackyweka,
-    },
-    {
-      title: "Kiwiburn",
-      subtitle: "Multipage Event Website built with React",
-      url: "/kiwiburnproject",
-      image:
-        "https://kiwiburn.com/wp-content/uploads/2017/09/Rob-Tangent-Kiwiburn-2017-121-of-299-web.jpg",
-    },
-    {
-      title: "Wetaverse",
-      subtitle: "Multipage React Website for Plant Nursery",
-      url: "/wetaverseproject",
-      image: wackyweka,
-    },
     {
       title: "Gig Fort",
       subtitle: "Mobile App Design - Gig finding app",
@@ -40,10 +22,22 @@ const HomePageProjects = () => {
       image: gigfort1,
     },
     {
+      title: "Wacky Weka",
+      subtitle: "Multipage React Website for Plant Nursery",
+      url: "/wackywekaproject",
+      image: wackyweka,
+    },
+    {
       title: "Divine Stays",
-      subtitle: "Accommodation Booking Site",
+      subtitle: "Single Page Accommodation Booking Site",
       url: "/divinestaysproject",
       image: divinestays,
+    },
+    {
+      title: "Wetaverse",
+      subtitle: "Social Media Full Stack Application - Collaborative Project",
+      url: "/wetaverseproject",
+      image: wetaverse,
     },
   ];
 

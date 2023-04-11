@@ -82,13 +82,13 @@ const GigFort = () => {
       </div>
       <div className="project-content-container">
         <p className="bottom-text">
-          Gig Fort is an event finding app specific to the Wellington region
+          Gig Fort is an event-finding app specific to the Wellington region
           that helps users quickly and easily find events and gigs that are on
           using a map interface without the fuss of sifting through pages of
           excess information. I was tasked with performing the UX process and
           designing the UI of this app. This process included running surveys,
           collecting information from users, conducting competitor analyses and
-          then creating wire-frames and prototypes to test viability. I designed
+          then creating wireframes and prototypes to test viability. I designed
           and created prototypes of this app using Figma.
         </p>
         <Carousel

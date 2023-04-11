@@ -62,9 +62,6 @@ const Navbar = () => {
                     <li>
                       <Link to="/wetaverseproject">Wetaverse</Link>
                     </li>
-                    <li>
-                      <Link to="/kiwiburnproject">Kiwiburn</Link>
-                    </li>
                   </ul>
                 </div>
               )}

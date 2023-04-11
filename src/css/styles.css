@@ -1700,6 +1700,7 @@
   width: 50px;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+  margin: 0 15px;
 }
 
 .spec-project-container .project-linkbtn img:hover {

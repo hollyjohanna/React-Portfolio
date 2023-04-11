@@ -38,9 +38,6 @@ const MobileMenu = ({ closeMethod }) => {
                 <li onClick={closeMethod}>
                   <Link to="/wetaverseproject">Wetaverse</Link>
                 </li>
-                <li onClick={closeMethod}>
-                  <Link to="/kiwiburnproject">Kiwiburn</Link>
-                </li>
               </ul>
             </div>
           )}

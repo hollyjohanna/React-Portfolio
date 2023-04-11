@@ -9,7 +9,7 @@ import Home from "./../pages/Home";
 import DivineStays from "../pages/DivineStays";
 import WackyWeka from "../pages/WackyWeka";
 import GigFort from "../pages/GigFort";
-import Kiwiburn from "../pages/Kiwiburn";
+import Wetaverse from "../pages/Wetaverse";
 // Import Components
 import ScrollToTopBtn from "./ScrollToTopBtn";
 // Import Dependencies
@@ -31,7 +31,7 @@ function Website() {
           <Route path="/divinestaysproject" element={<DivineStays />} />
           <Route path="/wackywekaproject" element={<WackyWeka />} />
           <Route path="/gigfortproject" element={<GigFort />} />
-          <Route path="/kiwiburnproject" element={<Kiwiburn />} />
+          <Route path="/wetaverseproject" element={<Wetaverse />} />
         </Routes>
         <Footer />
       </HashRouter>
