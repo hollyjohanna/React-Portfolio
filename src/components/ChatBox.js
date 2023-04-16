@@ -33,7 +33,7 @@ const ChatBox = () => {
     setGPTButtonText("Sending....");
     setResponse("Holli-bot is thinking...");
     axios
-      .post("http://localhost:5100/chatgpt", { prompt })
+      .post("/chatgpt", { prompt })
       .then((res) => {
         setResponse(res.data);
       })
