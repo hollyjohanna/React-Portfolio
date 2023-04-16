@@ -22,10 +22,6 @@ const emailPass = process.env.EMAIL_PASS;
 //console.log(process.env.EMAIL_USER);
 //console.log(process.env.EMAIL_PASS);
 
-//const emailUser = passwords.EMAIL_USER;
-//const emailPass = passwords.EMAIL_PASS;
-//console.log(passwords.EMAIL_USER);
-//console.log(passwords.EMAIL_PASS);
 //console.log(emailUser);
 //console.log(emailPass);
 
