@@ -1,4 +1,4 @@
-const passwords = require("./config.json");
+//const passwords = require("./config.json");
 const express = require("express");
 const router = express.Router();
 const cors = require("cors");
@@ -8,7 +8,7 @@ const fs = require("fs");
 require("dotenv").config();
 
 //server used to send emails and make API calls
-const port = 5100;
+const port = process.env.PORT || 5100;
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
