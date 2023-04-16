@@ -66,7 +66,7 @@ const config = new Configuration({
 
 const openai = new OpenAIApi(config);
 
-app.post("/chatgpt", async (req, res) => {
+app.post("/api/chatgpt", async (req, res) => {
   const { prompt } = req.body;
 
   const completion = await openai.createChatCompletion({
@@ -116,7 +116,7 @@ app.post("/chatgpt", async (req, res) => {
 
 //===========//===========//===========//===========//===========//===========
 
-router.post("/contact", (req, res) => {
+router.post("/api/contact", (req, res) => {
   const name = req.body.firstName + req.body.lastName;
   const email = req.body.email;
   const message = req.body.message;
